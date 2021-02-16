@@ -1,0 +1,28 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+home_side_nav:
+  - title: "Tech & Dev"
+    children:
+      - title: "Ruby"
+        url: /
+      - title: "Spring"
+        url: /
+  - title: "Hobbies"
+    children:
+      - title: "Cook"
+        url: /
+      - title: "Exercise"
+        url: /
+  - title: "Misc"
+    url: /
+
