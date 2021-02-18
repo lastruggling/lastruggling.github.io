@@ -1,0 +1,86 @@
+---
+title: Operator Overloading
+layout: single
+order_no: 1
+---
+
+Ruby극초반, 연산자 부분에서 이런 내용이 나왔다.
+
+> 연산자 중에 다음과 같은 것은 메소드로 정의되어 있다.
+
+> 루비는 객체지향 프로그래밍 언어다.
+> 특별한 점은 기본형이 존재하지 않고 *모든 것이 객체라는 것이다*
+
+🤔
+
+> +, -, and the like are not operators but method calls. They can, therefore, be overloaded by new definitions.
+
+😏
+
+```ruby
+irb(main):001:1* class TempClass
+irb(main):002:1*   attr_accessor :str
+irb(main):003:2*   def -@
+irb(main):004:2*     str.upcase
+irb(main):005:1*   end
+irb(main):006:2*   def +@
+irb(main):007:2*     str.downcase
+irb(main):008:1*   end
+irb(main):009:0> end
+=> :+@
+irb(main):010:0> tempInstance = TempClass.new
+=> #<TempClass:0x0000000002a87bc0>
+irb(main):011:0> tempInstance.str = "This Is Test String"
+=> "This Is Test String"
+irb(main):012:0> +tempInstance
+=> "this is test string"
+irb(main):014:0> -tempInstance
+=> "THIS IS TEST STRING"
+```
+
+Object에 정의된 method는 전부다 overloading이 가능할까?
+
+```ruby
+irb(main):001:0> Object.instance_methods
+=> [:dup, :itself, :yield_self, :then, :taint, :tainted?, :untaint, :untrust, :untrusted?, :trust, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, :instance_of?, :kind_of?, :is_a?, :tap, :clone, :display, :hash, :class, :singleton_class, :public_send, :method, :public_method, :singleton_method, :define_singleton_method, :extend, :to_enum, :enum_for, :<=>, :===, :=~, :!~, :nil?, :eql?, :respond_to?, :freeze, :inspect, :object_id, :send, :to_s, :__send__, :!, :==, :!=, :equal?, :__id__, :instance_eval, :instance_exec]
+```
+
+`:+`는 존재하지 않는다...?
+
+```ruby
+irb(main):002:0> Integer.method_defined?(:+)
+=> true
+irb(main):003:0> Integer.superclass
+=> Numeric
+irb(main):004:0> Numeric.method_defined?(:+)
+=> false
+irb(main):005:0> Object.method_defined?(:+)
+=> false
+```
+
+Overloading이라는 표현을 썼지만, 애초에 Object Class에 `+`도 없다.
+상속을 받지 않는이상은 Overloading을 하는것도 아니니
+*method명으로써 (일부 예약어를 제외한)특수문자를 허용한다* 라는 접근이 나으려나?
+
+
+....🤔
+
+```ruby
+  class Array
+    superator "<---" do |operand|
+      if operand.kind_of? Array
+        self + operand.map { |x| x.inspect }
+      else
+        operand.inspect
+      end
+    end
+  end
+```
+superator라는 gem이 있는거보면 그게 맞는것 같다.
+
+
+# Reference
+
+[Ruby FAQ : Are +,-,\*,...operators?](https://www.ruby-lang.org/en/documentation/faq/7/)
+
+[Ruby Gem Superator](https://github.com/jicksta/superators)

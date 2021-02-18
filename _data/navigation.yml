@@ -14,15 +14,15 @@ home_side_nav:
   - title: "Tech & Dev"
     children:
       - title: "Ruby"
-        url: /
+        url: /ruby/
       - title: "Spring"
-        url: /
+        url: /spring/
   - title: "Hobbies"
     children:
       - title: "Cook"
-        url: /
+        url: /cook/
       - title: "Exercise"
-        url: /
+        url: /exercise/
   - title: "Misc"
-    url: /
+    url: /misc/
 
