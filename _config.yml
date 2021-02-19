@@ -286,29 +286,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: false
       related: true
-  - scope:
-      path: "_ruby/"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: false
-      related: false
       sidebar:
         nav: home_side_nav
-
-collections:
-  ruby:
-    output: true
-    permalink: /:collection/:path/
-  spring:
-    output: true
-    permalink: /:collection/:path/
-  cook:
-    output: true
-    permalink: /:collection/:path/

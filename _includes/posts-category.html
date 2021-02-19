@@ -1,0 +1,11 @@
+{% assign posts = site.categories[include.taxonomy] %}
+
+{% if include.sort_by %}
+  {% assign posts = posts | sort: include.sort_by %}
+{% endif %}
+
+{%- for post in posts -%}
+  {%- unless post.hidden -%}
+    {% include archive-single.html %}
+  {%- endunless -%}
+{%- endfor -%}

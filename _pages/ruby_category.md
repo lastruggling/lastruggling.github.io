@@ -1,8 +1,8 @@
 ---
 title: Ruby
-layout: collection
+layout: category
 permalink: /ruby/
-collection: ruby
+taxonomy: ruby
 entries_layout: list
-sort_by: order_no
+sort_by: order_id
 ---

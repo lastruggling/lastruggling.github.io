@@ -11,18 +11,24 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 home_side_nav:
-  - title: "Tech & Dev"
+  - title: "Dev"
     children:
       - title: "Ruby"
         url: /ruby/
-      - title: "Spring"
-        url: /spring/
-  - title: "Hobbies"
+      - title: "etc."
+        url: /dev_etc/
+  - title: "Language"
     children:
-      - title: "Cook"
-        url: /cook/
-      - title: "Exercise"
-        url: /exercise/
+      - title: "韓国語"
+        url: /korean/
+      - title: "일본어"
+        url: /japanese/
+#  - title: "Hobbies"
+#    children:
+#      - title: "Cook"
+#        url: /cook/
+#      - title: "Exercise"
+#        url: /exercise/
   - title: "Misc"
     url: /misc/
 
