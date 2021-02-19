@@ -276,7 +276,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
+      share: false
       related: true
       sidebar:
         nav: home_side_nav
@@ -291,14 +291,14 @@ defaults:
       share: false
       related: true
   - scope:
-      path: ""
+      path: "_ruby/"
     values:
       layout: single
       author_profile: true
       read_time: true
       comments: # true
       share: false
-      related: true
+      related: false
       sidebar:
         nav: home_side_nav
 
