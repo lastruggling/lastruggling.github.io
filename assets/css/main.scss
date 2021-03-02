@@ -23,3 +23,7 @@ blockquote {
 .greedy-nav .visible-links a::before {
   background: grey;
 }
+.nav__list .nav__items .active {
+  font-weight: bolder;
+  text-decoration: underline;
+}
