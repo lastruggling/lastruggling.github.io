@@ -20,3 +20,6 @@ blockquote {
   border-left: 0.25em solid darkgray;
   background: lightgray;
 }
+.greedy-nav .visible-links a::before {
+  background: grey;
+}
