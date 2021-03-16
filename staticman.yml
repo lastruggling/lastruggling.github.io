@@ -1,5 +1,5 @@
 comments:
-  allowedFields: ["name", "email", "url", "message"]
+  allowedFields: ["name", "email", "message"]
   allowedOrigins: ["localhost", "lastruggling.github.io"]
   branch: "master"
   commitMessage: "Add new comment via staticman"
