@@ -145,8 +145,10 @@ jekyll의 프론트 쪽(minimal mistakes의 comment layout파일)을 대충 수�
 ![after modify]({{ site.url }}{{ site.baseurl }}/assets/images/comment_modified.png)
 
 ## 끝
-이런 단점이 존재한다.
-* heroku가 무료이므로, idle상태에선 시간이 조금 걸린다
+남은 세팅은, gitignore에 comment파일들을 추가해주는 정도..?
+
+몇 번 테스트 해보니 이런 단점이 존재한다.
+* heroku가 무료이므로, idle상태에선 시간이 조금 걸린다. "계속 로딩이야"라는 반응도 있다.
 * heroku에서 블로그 repo로 push해도, github내부에서 jekyll을 빌드하므로 시간이 조금 걸린다
 
 대충 반영까지 1분 정도 잡야아 하는듯 하다.
