@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                    : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -23,7 +23,7 @@ name                     : "J. W Koo"
 description              : ""
 url                      : "https://lastruggling.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "lastruggling/lastruggling.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "lastruggling/lastruggling.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -218,6 +218,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -226,6 +227,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 
 # Archives

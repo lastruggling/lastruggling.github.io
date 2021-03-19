@@ -27,3 +27,31 @@ blockquote {
   font-weight: bolder;
   text-decoration: underline;
 }
+.comment__content-wrapper {
+  float: left;
+  width: calc(100% - 1em);  
+}
+.page__comments {
+  font-size: 0.7rem;
+}
+.page__comments-title {
+  padding-top: 1rem;
+  font-size: .75rem;
+}
+.comment__author, .comment__date {
+  display: inline;
+}
+.comment__text {
+  margin-left: 1rem;
+}
+.pagination--pager {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  &:visited {
+    color: #000;
+  }
+  &:hover {
+    color: #FFF;
+    background-color: #000;
+  }
+}

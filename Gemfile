@@ -17,6 +17,7 @@ gem "minimal-mistakes-jekyll"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-remote-theme"
+  gem "jekyll-last-modified-at"
 #  gem "github-pages"
 #  gem "jekyll-include-cache"
 end
