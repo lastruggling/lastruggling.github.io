@@ -22,7 +22,8 @@ en: &DEFAULT_EN
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categories:"
-  date_label                 : "Updated:"
+  publish_date_label         : "Published:"
+  modified_date_label        : "Modified:"
   comments_label             : "Leave a comment"
   comments_title             : "Comments"
   more_label                 : "Learn more"
@@ -81,7 +82,8 @@ es: &DEFAULT_ES
   meta_label                 :
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorías:"
-  date_label                 : "Actualizado:"
+  publish_date_label         : "Actualizado:"
+  modified_date_label        :
   comments_label             : "Deja un comentario"
   comments_title             : "Comentarios"
   more_label                 : "Ver más"
@@ -136,7 +138,8 @@ fr: &DEFAULT_FR
   meta_label                 :
   tags_label                 : "Tags :"
   categories_label           : "Catégories :"
-  date_label                 : "Mis à jour :"
+  publish_date_label         : "Mis à jour :"
+  modified_date_label        :
   comments_label             : "Laisser un commentaire"
   comments_title             : "Commentaires"
   more_label                 : "Lire plus"
@@ -193,7 +196,8 @@ tr: &DEFAULT_TR
   meta_label                 :
   tags_label                 : "Etiketler:"
   categories_label           : "Kategoriler:"
-  date_label                 : "Güncelleme tarihi:"
+  publish_date_label         : "Güncelleme tarihi:"
+  modified_date_label        :
   comments_label             : "Yorum yapın"
   comments_title             : "Yorumlar"
   more_label                 : "Daha fazlasını öğrenin"
@@ -243,7 +247,8 @@ pt: &DEFAULT_PT
   meta_label                 :
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorias:"
-  date_label                 : "Atualizado:"
+  publish_date_label         : "Atualizado:"
+  modified_date_label        :
   comments_label             : "Deixe um Comentário"
   comments_title             : "Comentários"
   more_label                 : "Saber mais"
@@ -291,7 +296,8 @@ pt-BR:
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorias:"
-  date_label                 : "Atualizado em:"
+  publish_date_label         : "Atualizado em:"
+  modified_date_label        :
   comments_label             : "Deixe um comentário"
   comments_title             : "Comentários"
   more_label                 : "Saiba mais"
@@ -342,7 +348,8 @@ it: &DEFAULT_IT
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorie:"
-  date_label                 : "Aggiornato:"
+  publish_date_label         : "Aggiornato:"
+  modified_date_label        :
   comments_label             : "Scrivi un commento"
   comments_title             :
   more_label                 : "Scopri di più"
@@ -395,7 +402,8 @@ zh: &DEFAULT_ZH_HANS
   meta_label                 :
   tags_label                 : "标签:"
   categories_label           : "分类:"
-  date_label                 : "更新时间:"
+  publish_date_label         : "更新时间:"
+  modified_date_label        :
   comments_label             : "留下评论"
   comments_title             : "评论"
   more_label                 : "了解更多"
@@ -448,7 +456,8 @@ zh-TW: &DEFAULT_ZH_HANT
   meta_label                 :
   tags_label                 : "標籤:"
   categories_label           : "分類:"
-  date_label                 : "更新時間:"
+  publish_date_label         : "更新時間:"
+  modified_date_label        :
   comments_label             : "留言"
   comments_title             : "留言內容"
   more_label                 : "了解更多"
@@ -501,7 +510,8 @@ de: &DEFAULT_DE
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Kategorien:"
-  date_label                 : "Aktualisiert:"
+  publish_date_label         : "Aktualisiert:"
+  modified_date_label        :
   comments_label             : "Hinterlassen Sie einen Kommentar"
   comments_title             : "Kommentare"
   more_label                 : "Mehr anzeigen"
@@ -563,7 +573,8 @@ ne: &DEFAULT_NE
   meta_label                 :
   tags_label                 : "ट्यागहरू:"
   categories_label           : "वर्गहरु:"
-  date_label                 : "अद्यावधिक:"
+  publish_date_label         : "अद्यावधिक:"
+  modified_date_label        :
   comments_label             : "टिप्पणी दिनुहोस्"
   comments_title             : "टिप्पणीहरू"
   more_label                 : "अझै सिक्नुहोस्"
@@ -613,7 +624,8 @@ ko: &DEFAULT_KO
   meta_label                 :
   tags_label                 : "태그:"
   categories_label           : "카테고리:"
-  date_label                 : "업데이트:"
+  publish_date_label         : "업데이트:"
+  modified_date_label        :
   comments_label             : "댓글남기기"
   comments_title             : "댓글"
   more_label                 : "더 보기"
@@ -666,7 +678,8 @@ ru: &DEFAULT_RU
   meta_label                 :
   tags_label                 : "Метки:"
   categories_label           : "Разделы:"
-  date_label                 : "Дата изменения:"
+  publish_date_label         : "Дата изменения:"
+  modified_date_label        :
   comments_label             : "Оставить комментарий"
   comments_title             : "Комментарии"
   more_label                 : "Читать далее"
@@ -718,7 +731,8 @@ lt: &DEFAULT_LT
   meta_label                 :
   tags_label                 : "Žymės:"
   categories_label           : "Kategorijos:"
-  date_label                 : "Atnaujinta:"
+  publish_date_label         : "Atnaujinta:"
+  modified_date_label        :
   comments_label             : "Palikti komentarą"
   comments_title             : "Komentaras"
   more_label                 : "Skaityti daugiau"
@@ -768,7 +782,8 @@ gr: &DEFAULT_GR
   meta_label                 :
   tags_label                 : "Ετικέτες:"
   categories_label           : "Κατηγορίες:"
-  date_label                 : "Ενημερώθηκε:"
+  publish_date_label         : "Ενημερώθηκε:"
+  modified_date_label        :
   comments_label             : "Αφήστε ένα σχόλιο"
   comments_title             : "Σχόλια"
   more_label                 : "Διάβαστε περισσότερα"
@@ -820,7 +835,8 @@ sv: &DEFAULT_SV
   meta_label                 :
   tags_label                 : "Taggar:"
   categories_label           : "Kategorier:"
-  date_label                 : "Uppdaterades:"
+  publish_date_label         : "Uppdaterades:"
+  modified_date_label        :
   comments_label             : "Lämna en kommentar"
   comments_title             : "Kommentarer"
   more_label                 : "Lär dig mer"
@@ -875,7 +891,8 @@ nl: &DEFAULT_NL
   meta_label                 :
   tags_label                 : "Labels:"
   categories_label           : "Categorieën:"
-  date_label                 : "Bijgewerkt:"
+  publish_date_label         : "Bijgewerkt:"
+  modified_date_label        :
   comments_label             : "Laat een reactie achter"
   comments_title             : "Commentaren"
   more_label                 : "Meer informatie"
@@ -930,7 +947,8 @@ id: &DEFAULT_ID
   meta_label                 :
   tags_label                 : "Label:"
   categories_label           : "Kategori:"
-  date_label                 : "Diupdate:"
+  publish_date_label         : "Diupdate:"
+  modified_date_label        :
   comments_label             : "Tinggalkan komentar"
   comments_title             : "Komentar"
   more_label                 : "Pelajari lagi"
@@ -983,7 +1001,8 @@ vi: &DEFAULT_VI
   meta_label                 :
   tags_label                 : "Thẻ:"
   categories_label           : "Danh mục:"
-  date_label                 : "Ngày cập nhật:"
+  publish_date_label         : "Ngày cập nhật:"
+  modified_date_label        :
   comments_label             : "Để lại bình luận"
   comments_title             : "Bình luận"
   more_label                 : "Mở rộng"
@@ -1036,7 +1055,8 @@ da: &DEFAULT_DA
   meta_label                 :
   tags_label                 : "Nøgleord:"
   categories_label           : "Kategorier:"
-  date_label                 : "Opdateret:"
+  publish_date_label         : "Opdateret:"
+  modified_date_label        :
   comments_label             : "Skriv en kommentar"
   comments_title             : "Kommentarer"
   more_label                 : "Lær mere"
@@ -1089,7 +1109,8 @@ pl: &DEFAULT_PL
   meta_label                 :
   tags_label                 : "Tagi:"
   categories_label           : "Kategorie:"
-  date_label                 : "Ostatnia aktualizacja:"
+  publish_date_label         : "Ostatnia aktualizacja:"
+  modified_date_label        :
   comments_label             : "Zostaw komentarz"
   comments_title             : "Komentarze"
   more_label                 : "Dowiedz się więcej"
@@ -1139,7 +1160,8 @@ ja: &DEFAULT_JA
   meta_label                 :
   tags_label                 : "タグ:"
   categories_label           : "カテゴリー:"
-  date_label                 : "更新日時:"
+  publish_date_label         : "最初投稿:"
+  modified_date_label        : "最近修正:"
   comments_label             : "コメントする"
   comments_title             : "コメント"
   more_label                 : "さらに詳しく"
@@ -1191,7 +1213,8 @@ sk: &DEFAULT_SK
   meta_label                 :
   tags_label                 : "Tagy:"
   categories_label           : "Kategórie:"
-  date_label                 : "Aktualizované:"
+  publish_date_label         : "Aktualizované:"
+  modified_date_label        :
   comments_label             : "Zanechaj odkaz"
   comments_title             : "Komentáre"
   more_label                 : "Dozvedieť sa viac"
@@ -1244,7 +1267,8 @@ hu: &DEFAULT_HU
   meta_label                 :
   tags_label                 : "Tagek:"
   categories_label           : "Kategóriák:"
-  date_label                 : "Frissítve:"
+  publish_date_label         : "Frissítve:"
+  modified_date_label        :
   comments_label             : "Szólj hozzá!"
   comments_title             : "Hozzászólások"
   more_label                 : "Tovább"
@@ -1297,7 +1321,8 @@ ro: &DEFAULT_RO
   meta_label                 :
   tags_label                 : "Etichete:"
   categories_label           : "Categorii:"
-  date_label                 : "Actualizat:"
+  publish_date_label         : "Actualizat:"
+  modified_date_label        :
   comments_label             : "Lasă un comentariu"
   comments_title             : "Comentarii"
   more_label                 : "Citește mai departe"
@@ -1350,7 +1375,8 @@ pa: &DEFAULT_PA
   meta_label                 : "ਸਵੈ-ਸੰਦਰਭ ਜਾਣਕਾਰੀ"
   tags_label                 : "ਟੈਗ"
   categories_label           : "ਵਰਗ"
-  date_label                 : "ਅਪਡੇਟ ਕੀਤਾ:"
+  publish_date_label         : "ਅਪਡੇਟ ਕੀਤਾ:"
+  modified_date_label        :
   comments_label             : "ਇੱਕ ਟਿੱਪਣੀ ਛੱਡੋ"
   comments_title             : "ਟਿੱਪਣੀਆਂ"
   more_label                 : "ਹੋਰ ਜਾਣੋ"
@@ -1402,7 +1428,8 @@ fa: &DEFAULT_FA
   meta_label                 :
   tags_label                 : "تگ ها: "
   categories_label           : "دسته بندی ها: "
-  date_label                 : "به روز شده در: "
+  publish_date_label         : "به روز شده در: "
+  modified_date_label        :
   comments_label             : "ارسال نظر"
   comments_title             : "نظرات"
   more_label                 : "ادامه مطلب"
@@ -1456,7 +1483,8 @@ ml: &DEFAULT_ML
   meta_label                 :
   tags_label                 : "ടാഗുകൾ:"
   categories_label           : "വിഭാഗങ്ങൾ:"
-  date_label                 : "അവസാന മാറ്റം:"
+  publish_date_label         : "അവസാന മാറ്റം:"
+  modified_date_label        :
   comments_label             : "അഭിപ്രായം രേഖപ്പെടുത്തുക"
   comments_title             : "അഭിപ്രായങ്ങൾ"
   more_label                 : "കൂടുതൽ  അറിയുവാൻ"
@@ -1509,7 +1537,8 @@ th: &DEFAULT_TH
   meta_label                 :
   tags_label                 : "แท็ก:"
   categories_label           : "หมวดหมู่:"
-  date_label                 : "อัพเดตล่าสุด:"
+  publish_date_label         : "อัพเดตล่าสุด:"
+  modified_date_label        :
   comments_label             : "แสดงความคิดเห็น"
   comments_title             : "ความคิดเห็น"
   more_label                 : "อ่านต่อ"
@@ -1561,7 +1590,8 @@ hi: &DEFAULT_HI
   meta_label                 : "स्व-संदर्भात्मक जानकारी"
   tags_label                 : "अंकितक:"
   categories_label           : "श्रेणियाँ:"
-  date_label                 : "अपडेट किया गया:"
+  publish_date_label         : "अपडेट किया गया:"
+  modified_date_label        :
   comments_label             : "एक टिप्पणी छोड़ें"
   comments_title             : "टिप्पणियाँ"
   more_label                 : "और अधिक जानें"
@@ -1614,7 +1644,8 @@ ca: &DEFAULT_CA
   meta_label                 :
   tags_label                 : "Etiquetes:"
   categories_label           : "Categories:"
-  date_label                 : "Actualitzat:"
+  publish_date_label         : "Actualitzat:"
+  modified_date_label        :
   comments_label             : "Deixa un comentari"
   comments_title             : "Comentaris"
   more_label                 : "Llegeix més"
@@ -1667,7 +1698,8 @@ ga: &DEFAULT_GA
   meta_label                 :
   tags_label                 : "Clibeanna:"
   categories_label           : "Catagoírí:"
-  date_label                 : "Nuashonraíodh:"
+  publish_date_label         : "Nuashonraíodh:"
+  modified_date_label        :
   comments_label             : "Fág trácht"
   comments_title             : "Tráchtanna"
   more_label                 : "Foghlaim níos mó"
@@ -1715,7 +1747,8 @@ fi: &DEFAULT_FI
   meta_label                 :
   tags_label                 : "Tagit:"
   categories_label           : "Kategoriat:"
-  date_label                 : "Päivitetty:"
+  publish_date_label         : "Päivitetty:"
+  modified_date_label        :
   comments_label             : "Jätä kommentti"
   comments_title             : "Kommentit"
   more_label                 : "Lisää"
@@ -1766,7 +1799,8 @@ my: &DEFAULT_MY
   meta_label                 :
   tags_label                 : "အမှတ်အသားများ -"
   categories_label           : "အမျိုးအစားများ -"
-  date_label                 : "ပြင်ဆင်ပြီး -"
+  publish_date_label         : "ပြင်ဆင်ပြီး -"
+  modified_date_label        :
   comments_label             : "မှတ်ချက်တစ်ခုချန်ထားပါ။"
   comments_title             : "မှတ်ချက်များ"
   more_label                 : "ပိုမိုသိရှိရန်"
@@ -1819,7 +1853,8 @@ no: &DEFAULT_NO
   meta_label                 :
   tags_label                 : "Nøkkelord:"
   categories_label           : "Kategorier:"
-  date_label                 : "Oppdatert:"
+  publish_date_label         : "Oppdatert:"
+  modified_date_label        :
   comments_label             : "Skriv en kommentar"
   comments_title             : "Kommentarer"
   more_label                 : "Lær mer"
@@ -1874,7 +1909,8 @@ he: &DEFAULT_HE
   meta_label                 :
   tags_label                 : "תגיות:"
   categories_label           : "קטגוריות:"
-  date_label                 : "מעודכן:"
+  publish_date_label         : "מעודכן:"
+  modified_date_label        :
   comments_label             : "השאירו הערה"
   comments_title             : "הערות"
   more_label                 : "קראו עוד"
