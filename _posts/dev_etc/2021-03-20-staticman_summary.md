@@ -49,11 +49,11 @@ app 추가방법은 github문서와 staticman공식 문서를 참고.
 [GitHub Docs](https://docs.github.com/en/developers/apps/creating-a-github-app)
 [Staticman Getting Started](https://staticman.net/docs/getting-started.html)
 
-> Homepage: "https://staticman.net/"
-> Webhook URL: "{STATICMAN_BASE_URL}/v1/webhook" - e.x. "https://mystaticmaninstance.herokuapp.com/v1/webhook"
-> Contents: Read & Write - Necessary to read the Staticman site config
-> Pull Requests: Read & Write - Necessary to merge pull requests
-> Subscribe to Pull request events
+> Homepage: "https://staticman.net/"  
+> Webhook URL: "{STATICMAN_BASE_URL}/v1/webhook" - e.x. "https://mystaticmaninstance.herokuapp.com/v1/webhook"  
+> Contents: Read & Write - Necessary to read the Staticman site config  
+> Pull Requests: Read & Write - Necessary to merge pull requests  
+> Subscribe to Pull request events  
 
 앱 생성 후 Edit창에서 Private Key를 생성하면, pem파일을 다운로드 한다.
 
