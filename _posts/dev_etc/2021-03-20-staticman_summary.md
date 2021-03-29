@@ -9,6 +9,8 @@ tags:
   - staticman
   - jekyll
 language: KR
+excerpt: 답글 기능 staticman 도입 작업 로그
+last_modified_at: 2021-03-30 01:33
 ---
 
 ## 왜 Staticman?
@@ -24,6 +26,7 @@ language: KR
 2. Docker를 이용한다. Docker 한번 써보고 싶었는데 잘됐다.
 3. 남들이 안쓴다.
 
+
 ## staticman을 Heroku에 올리기
 staticman의 문서를 보면, heroku내의 staticman을 fork해서, 바로 쓰는방법도 있지만,  
 heroku client를 설치해야한다.
@@ -37,9 +40,11 @@ $ git clone git@github.com:eduardoboucas/staticman.git
 ```
 대충 훑어보고 지울거 지우고 새 repo를 만들고 push한 뒤,  
 heroku에서 새 app을 만들고, github에 연동.
+
 ![heroku settings]({{ site.url }}{{ site.baseurl }}/assets/images/heroku_github_staticman.png)
 
 아직은 필수 세팅이 안되있으므로 안돌아가는 상태.
+
 
 ## github에 app추가
 staticman은 heroku에서 돌아가면서 내 블로그의 repo에 답글 내용을 직접 추가시킨다.  
@@ -57,6 +62,7 @@ app 추가방법은 github문서와 staticman공식 문서를 참고.
 
 앱 생성 후 Edit창에서 Private Key를 생성하면, pem파일을 다운로드 한다.
 
+
 ## heroku의 환경변수 세팅
 staticman을 쓰기 위해서는, 이하의 값을 세팅해줘야 한다.
 * 전송 내용을 암호화 할 RSA Private key(필수)
@@ -71,6 +77,7 @@ private key를 github에 올리는건 거부감이 있다.
 staticman은 환경변수로 설정값을 읽어오게끔 되어있으므로, heroku의 환경변수로 세팅하는 쪽으로.
 
 [staticman api](https://staticman.net/docs/api)
+
 ![heroku env settings]({{ site.url }}{{ site.baseurl }}/assets/images/heroku_github_staticman.png)
 
 * GITHUB_APP_ID: github에 등록한 app의 app id
@@ -81,6 +88,7 @@ staticman은 환경변수로 설정값을 읽어오게끔 되어있으므로, he
 ```
 Hello from Staticman version 3.0.0!
 ```
+
 
 ## staticman세팅
 blog에서 staticman을 추가시켜야 한다.  
@@ -133,15 +141,18 @@ defaults:
       ...
 ```
 
+
 ## 디자인 변경
 답글 창이 영 맘에 안든다.  
 메일 주소나 url주소를 받을 의향도 없고, 이미지를 띄울 의향도 없으므로  
 jekyll의 프론트 쪽(minimal mistakes의 comment layout파일)을 대충 수정해준다.
 
 수정 전
+
 ![before modify]({{ site.url }}{{ site.baseurl }}/assets/images/comment_before.png)
 
 수정 후
+
 ![after modify]({{ site.url }}{{ site.baseurl }}/assets/images/comment_modified.png)
 
 ## 끝
@@ -153,5 +164,3 @@ jekyll의 프론트 쪽(minimal mistakes의 comment layout파일)을 대충 수�
 
 대충 반영까지 1분 정도 잡야아 하는듯 하다.
 어차피 답글 쓸 사람도 없을테니 신경 쓰지 말아야지.
-
-각 단계의 상세는 기분 내키면 써야지.(귀찮아)
